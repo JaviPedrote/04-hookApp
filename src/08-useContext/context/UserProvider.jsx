@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { UserContext } from "./userContext";
+import { UserContexto } from "./userContext";
 import { useState } from "react";
 
 export const UserProvider = ({ children }) => {
@@ -8,8 +8,8 @@ export const UserProvider = ({ children }) => {
 
   return (
       // <UserContext.Provider value={{ hola: 'Mundo', user: user }}>
-      <UserContext.Provider value={{ user, setUser }}>
+      <UserContexto.Provider value={{ user, setUser }}>
           { children }
-      </UserContext.Provider>
+      </UserContexto.Provider>
   )
 }

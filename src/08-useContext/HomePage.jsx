@@ -1,9 +1,9 @@
 import { useContext } from "react"
-import { UserContext } from "./context/userContext"
+import { UserContexto } from "./context/UserContext"
 
 export const HomePage = () => {
 
-    const { user } = useContext( UserContext );
+    const { user } = useContext( UserContexto );
   
   
       return (
@@ -11,7 +11,7 @@ export const HomePage = () => {
             <h1>HomePage <small>{ user?.name }</small> </h1>
             <hr />
   
-            <pre>
+            <pre aria-label="pre">
               { JSON.stringify( user, null, 3 ) }
             </pre>
         </>
